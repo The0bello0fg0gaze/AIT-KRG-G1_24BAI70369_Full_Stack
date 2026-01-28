@@ -1,5 +1,4 @@
-/* General Reset */
-* {
+{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -11,7 +10,6 @@ body {
     color: #333;
 }
 
-/* Navbar */
 .navbar {
     display: flex;
     justify-content: space-between;
@@ -44,7 +42,6 @@ nav a {
     cursor: pointer;
 }
 
-/* Hero Section */
 .hero {
     background: #2d3436;
     color: white;
@@ -78,7 +75,6 @@ nav a {
     cursor: pointer;
 }
 
-/* Job Cards */
 .container {
     max-width: 800px;
     margin: 40px auto;
