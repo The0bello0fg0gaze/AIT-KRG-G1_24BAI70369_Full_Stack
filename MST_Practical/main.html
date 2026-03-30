@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Promise & DOM Task</title>
+    <style>
+        body { 
+		font-family: sans-serif;
+		padding: 20px; 
+	}
+        #myParagraph { 
+		font-weight: bold; 
+		font-size: 1.2rem; 
+	}
+    </style>
+</head>
+<body>
+
+    <p id="myParagraph">Click the button to start the process.</p>
+    <button id="Btn">Run</button>
+
+    <script>
+        const paragraph = document.getElementById('myParagraph');
+        const button = document.getElementById('Btn');
+
+        const fetchData = () => {
+            return new Promise((resolve, reject) => {
+                setTimeout(() => {
+                    resolve("Data fetched successfully");
+                }, 2000);
+            });
+        };
+
+        button.addEventListener('click', () => {
+            paragraph.textContent = "Loading...";
+            paragraph.style.color = "gray";
+
+            fetchData()
+                .then((message) => {
+                    paragraph.textContent = "Welcome to JavaScript DOM Manipulation";
+                    paragraph.style.color = "blue";
+                    console.log(message);  
+		})
+                .catch((error) => {
+                    paragraph.textContent = "An error occurred.";
+                    paragraph.style.color = "red";
+                });
+        });
+    </script>
+
+</body>
+</html>

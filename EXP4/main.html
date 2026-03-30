@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Job Board Creator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="main-wrapper">
+        <header>
+            <h1>Post a New Job</h1>
+        </header>
+
+        <section class="form-section">
+            <form id="jobEntryForm">
+                <input type="text" id="jobTitle" placeholder="Job Title (e.g. Frontend Dev)" required>
+                <input type="text" id="company" placeholder="Company Name" required>
+                <input type="text" id="location" placeholder="Location (e.g. Remote)" required>
+                <textarea id="description" placeholder="Short Job Description..." rows="3"></textarea>
+                <button type="submit">Post Job Card</button>
+            </form>
+        </section>
+
+        <hr>
+
+        <section id="jobBoard" class="job-grid">
+            </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

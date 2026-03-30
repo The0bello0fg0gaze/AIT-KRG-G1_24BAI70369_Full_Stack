@@ -1,0 +1,51 @@
+ Even students 
+
+ Create a small form with title and body fields.  On submit, send a  
+	POST request to the same API endpoint (/posts)  and display a success  
+	message once data is submitted. 
+
+Add and Remove List Items Dynamically 
+
+!!!Create an HTML page containing: 
+
+A text input field 
+
+An Add Item button 
+
+A Remove Last Item button 
+
+An unordered list (<ul>) 
+
+Task: 
++
+When the Add Item button is clicked 
+
+Take the value from the input field. 
+
+Create a new <li> element. 
+
+Add it to the list. 
+
+When the Remove Last Item button is clicked: 
+
+Remove the last <li> element from the list 
+
+ 
+
+Odd students 
+
+1. Create a Promise that resolves after 2 seconds with the message: 
+	"Data fetched successfully" 
+	and use .then() and .catch() to handle it. 
+
+2.Change Content and Style using DOM 
+
+Create an HTML page with a paragraph and a button 
+
+Task: 
+
+When the button is clicked 
+
+Change the text of the paragraph to "Welcome to JavaScript DOM Manipulation". 
+
+Change the paragraph color to blue 

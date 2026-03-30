@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Job Search Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <section class="form-card">
+        <h2>Job Application</h2>
+        <form id="jobForm">
+            <input type="text" id="fullName" placeholder="Full Name" required>
+            <input type="email" id="email" placeholder="Email Address" required>
+            <input type="text" id="jobTitle" placeholder="Target Job Title" required>
+            <textarea id="skills" placeholder="Top Skills (comma separated)"></textarea>
+            <button type="submit">Update Profile</button>
+        </form>
+    </section>
+
+    <section class="profile-card" id="userProfile">
+        <h2>Live Preview</h2>
+        <div class="profile-content">
+            <p><strong>Name:</strong> <span id="display-name">---</span></p>
+            <p><strong>Email:</strong> <span id="display-email">---</span></p>
+            <p><strong>Title:</strong> <span id="display-title">---</span></p>
+            <p><strong>Skills:</strong> <span id="display-skills">---</span></p>
+        </div>
+    </section>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
